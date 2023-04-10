@@ -46,12 +46,7 @@ body {
 /* Normal smartphone screen */
 @media(min-width: 300px) and (max-width: 425px) {
     .container {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .attribution {
-        display: none;
+        width: 290px;
     }
 }
 
@@ -116,6 +111,11 @@ i {
     padding: 20px;
 }
 
+.p-balance .icon-circle {
+    padding: 5px 3px 2px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
 .p-hello {
     padding: 20px;
 }
@@ -129,12 +129,24 @@ i {
     height: 40px;
     background: #fdf6f6;
     color: blue;
-    margin: 5px 30px 10px 0;
+    margin: 0 28px 10px 0;
     padding: 10px;
     align-items: center;
     display: flex;
     border-radius: 5px;
+    cursor: pointer;
 }
+.send:hover {
+    background: #E7ECF0;
+}
+.receive:hover {
+    background: #E7ECF0;
+}
+.card:hover {
+    background: #E7ECF0;
+}
+
+
 .send h5 {
     padding-left: 5px;
 }
@@ -171,6 +183,7 @@ i {
     display: flex;
     border-bottom: 2px solid blue;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .assets h5 {
@@ -210,6 +223,10 @@ i {
     cursor: pointer;
 }
 
+.list:hover {
+    background: #E7ECF0;
+}
+
 .list-li-left {
     display: flex;
     flex-direction: row;
@@ -228,6 +245,7 @@ i {
     padding-bottom: 5px;
     font-size: 0.8rem;
     color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
 .list h5 {
