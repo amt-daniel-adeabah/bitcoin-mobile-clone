@@ -46,7 +46,12 @@ body {
 /* Normal smartphone screen */
 @media(min-width: 300px) and (max-width: 425px) {
     .container {
-        width: 290px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .attribution {
+        display: none;
     }
 }
 
