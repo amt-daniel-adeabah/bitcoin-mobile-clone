@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>BitSika</title>
 </head>
 <body>
@@ -41,7 +41,7 @@
             <!-- Buttons -->
             <section class="p-buttons">
                 <div class="portfolio-buttons">
-                    <div class="send">
+                    <div class="send item">
                         <i class="fas fa-arrow-up fa-1x"></i>
                         <h5>Send</h5>
                     </div>
@@ -78,109 +78,111 @@
             
             
             <!-- Coin list or brands -->
-            <div class="list">
-                <div class="list-li-left">
-                    <div class="list-li-img">
-                        <img src="./images/Bitcoin.svg.png" alt="">
+            <div class="sortable-list">
+                <div class="list item" draggable="true">
+                    <div class="list-li-left">
+                        <div class="list-li-img">
+                            <img src="./images/Bitcoin.svg.png" alt="">
+                        </div>
+                        <div class="list-li-text">
+                            <h3>Bitcoin</h3>
+                            <h5>$28360.85</h5>
+                        </div>
                     </div>
-                    <div class="list-li-text">
-                        <h3>Bitcoin</h3>
-                        <h5>$28360.85</h5>
-                    </div>
-                </div>
-                
-                <div class="list-li-right">
-                    <h3>0.00000 BTC</h3>
-                    <h5>$0.03</h5>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-li-left">
-                    <div class="list-li-img">
-                        <img src="./images/Bitcoin_Cash.png" alt="">
-                    </div>
-                    <div class="list-li-text">
-                        <h3>Bitcoin Cash</h3>
-                        <h5>$125.00</h5>
+                    
+                    <div class="list-li-right">
+                        <h3>0.00000 BTC</h3>
+                        <h5>$0.03</h5>
                     </div>
                 </div>
-                
-                <div class="list-li-right">
-                    <h3>0.000 BCH</h3>
-                    <h5>$0.00</h5>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-li-left">
-                    <div class="list-li-img">
-                        <img src="./images/dogecoin.jfif" alt="">
+                <div class="list item" draggable="true">
+                    <div class="list-li-left">
+                        <div class="list-li-img">
+                            <img src="./images/Bitcoin_Cash.png" alt="">
+                        </div>
+                        <div class="list-li-text">
+                            <h3>Bitcoin Cash</h3>
+                            <h5>$125.00</h5>
+                        </div>
                     </div>
-                    <div class="list-li-text">
-                        <h3>Dogecoin</h3>
-                        <h5>$0.08</h5>
-                    </div>
-                </div>
-                
-                <div class="list-li-right">
-                    <h3>0.000 DOGE</h3>
-                    <h5>$0.00</h5>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-li-left">
-                    <div class="list-li-img">
-                        <img src="./images/litecoin.png" alt="">
-                    </div>
-                    <div class="list-li-text">
-                        <h3>Litecoin</h3>
-                        <h5>$90.42</h5>
+                    
+                    <div class="list-li-right">
+                        <h3>0.000 BCH</h3>
+                        <h5>$0.00</h5>
                     </div>
                 </div>
-                
-                <div class="list-li-right">
-                    <h3>0.000 LTC</h3>
-                    <h5>$0.00</h5>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-li-left">
-                    <div class="list-li-img">
-                        <img src="./images/tron.png" alt="">
+                <div class="list item" draggable="true">
+                    <div class="list-li-left">
+                        <div class="list-li-img">
+                            <img src="./images/dogecoin.jfif" alt="">
+                        </div>
+                        <div class="list-li-text">
+                            <h3>Dogecoin</h3>
+                            <h5>$0.08</h5>
+                        </div>
                     </div>
-                    <div class="list-li-text">
-                        <h3>TRON</h3>
-                        <h5>$0.07</h5>
-                    </div>
-                </div>
-                
-                <div class="list-li-right">
-                    <h3>0.000 TRX</h3>
-                    <h5>$0.00</h5>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-li-left">
-                    <div class="list-li-img">
-                        <img src="./images/usdt.png" alt="">
-                    </div>
-                    <div class="list-li-text">
-                        <h3>USDT</h3>
-                        <h5>$1.00</h5>
+                    
+                    <div class="list-li-right">
+                        <h3>0.000 DOGE</h3>
+                        <h5>$0.00</h5>
                     </div>
                 </div>
-                
-                <div class="list-li-right">
-                    <h3>0.00 USDT</h3>
-                    <h5>$0.00</h5>
+                <div class="list item" draggable="true">
+                    <div class="list-li-left">
+                        <div class="list-li-img">
+                            <img src="./images/litecoin.png" alt="">
+                        </div>
+                        <div class="list-li-text">
+                            <h3>Litecoin</h3>
+                            <h5>$90.42</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="list-li-right">
+                        <h3>0.000 LTC</h3>
+                        <h5>$0.00</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="list">
-                <div class="list-li">
+                <div class="list item" draggable="true">
+                    <div class="list-li-left">
+                        <div class="list-li-img">
+                            <img src="./images/tron.png" alt="">
+                        </div>
+                        <div class="list-li-text">
+                            <h3>TRON</h3>
+                            <h5>$0.07</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="list-li-right">
+                        <h3>0.000 TRX</h3>
+                        <h5>$0.00</h5>
+                    </div>
+                </div>
+                <div class="list item" draggable="true">
+                    <div class="list-li-left">
+                        <div class="list-li-img">
+                            <img src="./images/usdt.png" alt="">
+                        </div>
+                        <div class="list-li-text">
+                            <h3>USDT</h3>
+                            <h5>$1.00</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="list-li-right">
+                        <h3>0.00 USDT</h3>
+                        <h5>$0.00</h5>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list-li">
+                    </div>
                 </div>
             </div>
         
-    <!-- Container ends -->
-    </div>
+        <!-- Container ends -->
+        </div>
     
     
         <!-- Bottom navigation -->
@@ -216,5 +218,6 @@
     <!-- Main ends -->
     </main>
 
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
