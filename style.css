@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #F7E9DC;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 20px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+.attribution a { 
+    color: hsl(228, 91%, 44%); 
+}
+
+/* Smallest screen */
+@media(min-width: 80px) and (max-width: 299px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Normal smartphone screen */
+@media(min-width: 300px) and (max-width: 425px) {
+    .container {
+        width: 290px;
+    }
+}
+
+/* Tablet to larger screen */
+@media(min-width: 426px) and (max-width: 2560px) {
+    .container {
+        width: 375px;
+    }
+}
+
+.container {
+    height: 520px;
+    background: #fdf7f7;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+display: none;
+} /* If you want to hide or show scroll-bar*/
+
+
+/* images auto sizes */
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* icons auto sizes */
+i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* navigation sections */
+.p-balance,.p-hello, .hello, .p-buttons, .portfolio-buttons {
+    background: #3861FB;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-hello img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.p-balance {
+    padding-left: 40px;
+    padding: 20px;
+}
+
+.p-hello {
+    padding: 20px;
+}
+
+.p-buttons {
+    padding: 1px 0 0 20px;
+}
+
+.p-buttons .send, .receive, .card {
+    width: 90px;
+    height: 40px;
+    background: #fdf6f6;
+    color: blue;
+    margin: 5px 30px 10px 0;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+}
+.send h5 {
+    padding-left: 5px;
+}
+.receive h5 {
+    padding-left: 5px;
+}
+.card h5 {
+    padding-left: 5px;
+}
+
+.send i {
+    color: blue;
+}
+.receive i {
+    color: blue;
+}
+.card i {
+    color: blue;
+}
+
+/* assets, utility and sort */
+.assetsUtility {
+    background: #faecec;
+    color: rgb(130, 133, 133);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0 20px;
+}
+
+.assetsUtility .assets {
+    color: blue;
+    display: flex;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5px;
+}
+
+.assets h5 {
+    padding-left: 5px;
+}
+
+.assetsUtility .assets i {
+    color: blue;
+    display: flex;
+}
+
+.assetsUtility .utility {
+    color: rgb(165, 165, 170);
+    display: flex;
+    padding: 10px 180px 10px 40px;
+}
+
+.assetsUtility .utility i {
+    color: rgb(160, 160, 179);
+    display: flex;
+}
+
+.assetsUtility .sort i {
+    color: rgb(96, 96, 218);
+    display: flex;
+}
+
+/* lists on of coins brands */
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #d3cdcd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.list-li-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.list-li-text {
+    padding-left: 20px;
+}
+
+.list h3 {
+    padding-bottom: 5px;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.list h5 {
+    font-size: 0.6rem;
+    color: rgb(110, 110, 110);
+}
+
+.list-li-left {
+    text-align: left;
+}
+
+.list-li-right {
+    text-align: right;
+}
+
+/* bottom fixed in position */
+/* .bottom-nav-position {
+    position: fixed;
+    width: 375px;
+    bottom: 150px;
+} */
+
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 30px 10px;
+    background: #fdf6f6;
+    border-top: 1px solid #d3cdcd;
+}
+
+.bottom-nav .icon-name h5 {
+    font-size: 0.9rem;
+    color: rgb(153, 151, 147);
+}
+
+.bottom-nav i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #5f5b5b;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.bottom-nav .icon-name .active {
+    color: rgb(110, 101, 230);
+}
+
+.bottom-nav .icon-name img {
+    margin-left: 10px;
+}
+    
+/* Smallest screen */
+@media(min-width: 0px) and (max-width: 279px) {
+    body {
+        display: none;
+    }
+}
+
+@media(min-width: 280px) and (max-width: 299px) {
+    .container {
+        width: 250px;
+    }
+    /* navigation sections */
+    .p-buttons .send, .receive, .card {
+        width: 70px;
+        height: 40px;
+        background: #fdf6f6;
+        color: blue;
+        margin: 5px 3px 10px 0;
+        padding: 5px;
+        align-items: center;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    /* assets, utility and sort */
+    .assetsUtility .utility {
+        color: rgb(165, 165, 170);
+        display: flex;
+        padding: 10px 50px 10px 40px;
+    }
+}
+
+/* Normal smartphone screen */
+@media(min-width: 300px) and (max-width: 425px) {
+    /* navigation sections */
+    .p-buttons .send, .receive, .card {
+        width: 80px;
+        height: 40px;
+        background: #fdf6f6;
+        color: blue;
+        margin: 5px 3px 10px 0;
+        padding: 5px;
+        align-items: center;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    /* assets, utility and sort */
+    .assetsUtility .utility {
+        color: rgb(165, 165, 170);
+        display: flex;
+        padding: 10px 100px 10px 40px;
+    }
+}
