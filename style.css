@@ -18,6 +18,14 @@ body {
     overflow: hidden;
 }
 
+/* Hide page on screen in this contrast */
+@media(min-width: 0px) and (max-width: 279px) {
+    body {
+        display: none;
+    }
+}
+
+
 /* Attribution */
 .attribution { 
     font-size: 20px; 
@@ -230,13 +238,6 @@ i {
     text-align: right;
 }
 
-/* bottom fixed in position */
-/* .bottom-nav-position {
-    position: fixed;
-    width: 375px;
-    bottom: 150px;
-} */
-
 .bottom-nav {
     display: flex;
     flex-direction: row;
@@ -271,12 +272,6 @@ i {
 }
     
 /* Smallest screen */
-@media(min-width: 0px) and (max-width: 279px) {
-    body {
-        display: none;
-    }
-}
-
 @media(min-width: 280px) and (max-width: 299px) {
     .container {
         width: 250px;
